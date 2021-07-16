@@ -10,8 +10,8 @@ def shopping_list():
 
 @app.route('/show_items', methods=['POST', 'GET'])
 def items():
-    result = request.form
-    return render_template('show_items.html', result=result)
+    results = request.form
+    return render_template('show_items.html', result=results)
 
 
 if __name__ == '__main__':
